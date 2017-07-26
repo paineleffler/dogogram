@@ -1,3 +1,9 @@
+%head
+  %meta{:content => "text/html; charset=UTF-8", "http-equiv" => "Content-Type"}/
+  %title Dogogram
+  = csrf_meta_tags
+  = stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload'
+  = javascript_include_tag 'application', 'data-turbolinks-track': 'reload'
 %nav.navbar.navbar-default
   .navbar-container
     .navbar-header
@@ -14,3 +20,9 @@
           = link_to "Login", '#'
         %li
           = link_to "Register", '#'
+  .container
+    -flash.each do |name, msg|
+      = content_tag :div, msg, class: [:alert, alert_for(name)]
+      = yield
+%body
+  = yield
