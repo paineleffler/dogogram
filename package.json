@@ -1,10 +1,5 @@
 {
   "name": "dogogram",
   "private": true,
-  "dependencies": {},
-  "scripts": {
-    "dokku": {
-      "postdeploy": "bundle exec rake db:migrate"
-    }
-  }
+  "dependencies": {}
 }
