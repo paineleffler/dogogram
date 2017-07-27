@@ -149,3 +149,26 @@ body {
   padding: 1em;
   margin: 0px auto;
 }
+
+#paginator {
+  color: #434447;
+  height: 120px;
+  width: 120px;
+  margin: 60px auto 40px;
+  position: relative;
+  display: table;
+  :hover {
+    color: #2D6DA8;
+  }
+}
+
+#load_more {
+  display: table-cell;
+  font-size: 12px;
+  padding: 0px 9px;
+  vertical-align: middle;
+  text-decoration: none;
+  a :hover {
+    color: #2D6DA8;
+  }
+}
